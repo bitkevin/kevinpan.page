@@ -212,9 +212,9 @@ c9f3b07ebfca68fd1a6339d0808fbb013c90c6095fc93901ea77410103489ab7
 00000000  // 消费的Tx位于前向交易输出的第0个，UINT32，固定4字节
 8a        // 签名的长度, 0x8A = 138字节
 // 138字节长度的签名，含有两个部分：公钥+签名
-47       // 公钥长度，0x47 = 71字节
+47       // 签名长度，0x47 = 71字节
 3044022055bac1856ecbc377dd5e869b1a84ed1d5228c987b098c095030c12431a4d5249022055523130a9d0af5fc27828aba43b464ecb1991172ba2a509b5fbd6cac97ff3af01
-41       // 签名长度，0x41 = 65字节
+41       // 公钥长度，0x41 = 65字节
 048aefd78bba80e2d1686225b755dacea890c9ca1be10ec98173d7d5f2fefbbf881a6e918f3b051f8aaaa3fcc18bbf65097ce8d30d5a7e5ef8d1005eaafd4b3fbe
 ffffffff  // sequence，0xffffffff = 4294967295， UINT32, 固定4字节
 

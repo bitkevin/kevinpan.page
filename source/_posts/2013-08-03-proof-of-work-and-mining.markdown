@@ -183,6 +183,8 @@ Hash Dance起名源于[Google Dance](https://www.google.com.hk/search?q=google+d
 
 #### 算力攻击的概率
 
+_本节内容参考：[Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)_
+
 算力攻击是一个概率问题，这里作简单叙述：
 
 * p = 诚实节点挖出block概率
