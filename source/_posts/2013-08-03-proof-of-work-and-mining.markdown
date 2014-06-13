@@ -17,7 +17,7 @@ categories:
 
 挖矿即不断接入新的Block延续Block Chain的过程。
 
-![qq20130731-1](https://f.cloud.github.com/assets/514951/886819/d2df8f62-f9f0-11e2-93da-4f66e3093c33.png)
+![blockchain](https://f.cloud.github.com/assets/514951/886819/d2df8f62-f9f0-11e2-93da-4f66e3093c33.png)
 
 挖矿为整个系统的运转提供原动力，是比特币的发动机，`没有挖矿就没有比特币`。挖矿有三个重要功能：
 
@@ -189,19 +189,19 @@ Hash Dance起名源于[Google Dance](https://www.google.com.hk/search?q=google+d
 * q = 攻击者挖出block概率，q = 1 - p
 * qz = 攻击者从z个block追上的概率
 
-![qq20130803-2](https://f.cloud.github.com/assets/514951/902244/a22dae50-fb92-11e2-95aa-3e346efdab40.png)
+![算力攻击的概率](https://f.cloud.github.com/assets/514951/902244/a22dae50-fb92-11e2-95aa-3e346efdab40.png)
 
 我们假设p>q，否则攻击者掌握了一半以上的算力，那么概率上永远是赢的。该事件（攻击者胜出）的概率是固定，且N次事件之间是相互独立的，那么这一系列随机过程符合`泊松分布(Poisson Distribution)`。*Z*个块时，攻击者胜出的期望为*lambda*：
 
-![qq20130803-4](https://f.cloud.github.com/assets/514951/905393/e386fa6c-fc20-11e2-8376-73d9a367bf98.png)
+![攻击者胜出的期望](https://f.cloud.github.com/assets/514951/905393/e386fa6c-fc20-11e2-8376-73d9a367bf98.png)
 
 攻击者在攻击时已经偷偷的计算了*k*个块，那么这*k*个块概率符合泊松分布(下图左侧部分)，若*k<=z*，那么追赶上后续*z-k*个块的概率为*(q/p)^(z-k)*，即：
 
-![qq20130803-5](https://f.cloud.github.com/assets/514951/905394/d08dfcca-fc21-11e2-9740-907f2a89de88.png)
+![k个块概率符合泊松分布](https://f.cloud.github.com/assets/514951/905394/d08dfcca-fc21-11e2-9740-907f2a89de88.png)
 
 展开为如下形式：
 
-![qq20130803-7](https://f.cloud.github.com/assets/514951/905406/b08c63ec-fc23-11e2-8f43-c932daec9f7c.png)
+![k个块概率符合泊松分布](https://f.cloud.github.com/assets/514951/905406/b08c63ec-fc23-11e2-8f43-c932daec9f7c.png)
 
 计算该过程的C语言代码如下：
 
@@ -211,7 +211,7 @@ Hash Dance起名源于[Google Dance](https://www.google.com.hk/search?q=google+d
 
 我们选取几个值，结果如下：
 
-![qq20130803-8](https://f.cloud.github.com/assets/514951/905408/e6c5ed84-fc23-11e2-9334-ca8e768c5aa0.png)
+![概率结果](https://f.cloud.github.com/assets/514951/905408/e6c5ed84-fc23-11e2-9334-ca8e768c5aa0.png)
 
 可以看到，由于block的链式形式，随着块数的上升，攻击者赢得的概率呈指数下降。这是很多应用等待六个甚至六个以上确认的原因，一旦超过N个确认，攻击者得逞的可能微乎其微，概率值快速趋近零。
 
