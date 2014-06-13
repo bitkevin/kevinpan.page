@@ -45,7 +45,6 @@ Bitcoin Qt，因为其是一款完整的钱包软件，需要下载大约超过`
 *  [Electrum](https://en.bitcoin.it/wiki/Electrum) - 著名轻钱包
 *  [Armory](https://en.bitcoin.it/wiki/Armory) - 基于Python，含有诸多特性的轻钱包
 *  [BlockChain.info](https://blockchain.info) - 非常著名在线钱包
-*  [Inputs.io](https://inputs.io) - 著名在线钱包
 
 ### 开发库
 
