@@ -33,6 +33,11 @@ tags:
 
 > 开放节点捐赠地址是： *[1CQUH3rYPYLdn8Sg5TRjzaCn4zrvjNE8RU](https://blockchain.info/address/1CQUH3rYPYLdn8Sg5TRjzaCn4zrvjNE8RU)*
 
+### Update
+* 2014-06-14 
+  * 如需公开捐赠，建议使用[blockchain.info](https://blockchain.info)，发款时添加_Public Note_
+  * 暂不支持LTC等其他币种
+
 ### Q&A
 
 Q: 每年需要捐赠的规模？
