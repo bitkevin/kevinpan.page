@@ -87,7 +87,7 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   repo: git@github.com:bitkevin/bitkevin.github.io.git
-  type: github
+  type: git
   brandh: master
 
 feed:
