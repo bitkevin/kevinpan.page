@@ -4,7 +4,7 @@
 
 # Site
 title: 比特币实验室
-subtitle: 618.io
+subtitle: blog.biqu.io
 description:
 author: Kevin Pan
 email: bit.kevin@gmail.com
@@ -12,7 +12,7 @@ language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://618.io/
+url: http://blog.biqu.io/
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
