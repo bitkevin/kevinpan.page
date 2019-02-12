@@ -2,17 +2,17 @@
 
 A brand new default theme for [Hexo].
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+- [Preview](https://hexojs.github.io/hexo-theme-landscape/)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/tommy351/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Landscape requires Hexo 2.4 and above.** If you would like to enable the RSS, the [hexo-generate-feed] plugin is also required.
 
 ### Enable
 
@@ -105,7 +105,8 @@ All of them are enabled by default. You can edit them in `widget` setting.
 - **fancybox** - Only download [Fancybox].
 - **clean** - Clean temporarily files and downloaded files.
 
-[Hexo]: http://zespia.tw/hexo/
+[Hexo]: https://hexo.io/
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
 [Grunt]: http://gruntjs.com/
+[hexo-generate-feed]: https://github.com/hexojs/hexo-generator-feed
