@@ -1,21 +1,21 @@
 kevinpan.page
 ======
 
-欢迎加入我们：
+Personal notes for maintaining the blog:
 
 ```bash
-# 克隆博客仓库
+# Clone the blog repo
 git clone https://github.com/bitkevin/kevinpan.page.git
 cd kevinpan.page
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 运行本地 server，预览
+# Run the local preview server
 npx hexo server
 ```
 
-撰写新文章：
+Create a new post:
 
 ```bash
 npx hexo new "my new article"
@@ -23,8 +23,7 @@ npx hexo new "my new article"
 
 ----
 
-Q: 如何撰写新文章？
-> A: 您可以fork该仓库，然后发起pull request即可。
+Notes:
 
-Q: 文章图片如何处理？
-> A: 通过发起issue，[https://github.com/bitkevin/kevinpan.page/issues/new](https://github.com/bitkevin/kevinpan.page/issues/new)，然后上传图片，就会得到图片的URL，再贴入文中。并不需要真的发一起一个issue。
+- Write posts directly in this repo.
+- For images, upload them somewhere that provides a stable public URL, then insert that URL into the post.
