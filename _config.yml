@@ -3,16 +3,17 @@
 ## Source: https://github.com/tommy351/hexo/
 
 # Site
-title: 比特币实验室
-subtitle: panzhibiao.com
+title: Kevin Pan's Page
+subtitle: kevinpan.page
 description:
 author: Kevin Pan
 email: bit.kevin@gmail.com
-language:
+language: zh-CN
+timezone: America/Chicago
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://panzhibiao.com/
+## If your site is put in a subdirectory, set url as 'https://yoursite.com/child' and root as '/child/'
+url: https://kevinpan.page/
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
@@ -29,12 +30,17 @@ new_post_name: :year-:month-:day-:title.md
 default_layout: post
 auto_spacing: false # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
-external_link: true # Open external links in new tab
+external_link:
+  enable: true
+  field: site
+  exclude:
+    - kevinpan.page
 max_open_file: 100
 multi_thread: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
+updated_option: date
 highlight:
   enable: true
   line_number: true
@@ -75,7 +81,7 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname: bitkevin
+disqus_shortname: 
 
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
@@ -88,10 +94,9 @@ exclude_generator:
 deploy:
   repo: git@github.com:bitkevin/bitkevin.github.io.git
   type: git
-  brandh: master
+  branch: master
 
 feed:
     type: atom
     path: atom.xml
     limit: 20
-

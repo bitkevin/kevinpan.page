@@ -3,23 +3,22 @@ kevinpan.page
 
 欢迎加入我们：
 
-```
-# 安装hexo
-npm install hexo-cli -g
-
+```bash
 # 克隆博客仓库
 git clone https://github.com/bitkevin/kevinpan.page.git
 cd kevinpan.page
 
-# 运行本地server，预览
+# 安装依赖
 npm install
-hexo server
+
+# 运行本地 server，预览
+npx hexo server
 ```
 
 撰写新文章：
 
-```
-hexo new "my new article"
+```bash
+npx hexo new "my new article"
 ```
 
 ----
