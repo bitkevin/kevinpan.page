@@ -21,9 +21,17 @@ Create a new post:
 npx hexo new "my new article"
 ```
 
+Deploy the generated site to `bitkevin/bitkevin.github.io`:
+
+```bash
+npx hexo clean
+npx hexo deploy
+```
+
 ----
 
 Notes:
 
 - Write posts directly in this repo.
 - For images, upload them somewhere that provides a stable public URL, then insert that URL into the post.
+- Deployment uses the Git target configured in the root `_config.yml`.
